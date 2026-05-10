@@ -7,17 +7,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="site-body">
-    <header class="site-header">
-      <div class="container nav-wrapper">
-        <a class="brand" href="./index.html">Tailwind Labs</a>
-        <nav id="menu-principal" class="site-nav">
-          <a href="./index.html">Inicio</a>
-          <a href="./pages/about.html">Sobre el curso</a>
-          <a href="./pages/faq.html">Preguntas frecuentes</a>
-          <a href="./pages/privacy.html">Privacidad</a>
-        </nav>
-      </div>
-    </header>
+    <header class="bg-[#0f172a] text-[#e2e8f0] py-4">
+  <div class="mx-auto max-w-[1100px] w-[92%] flex items-center justify-between gap-4">
+    <a class="font-bold text-lg" href="./index.html">Tailwind Labs</a>
+    
+    <nav id="menu-principal" class="flex gap-4 flex-wrap">
+      <a href="./index.html" class="text-cyan-300">Inicio</a>
+      <a href="./pages/about.html" class="hover:text-cyan-300 transition-colors">Sobre el curso</a>
+      <a href="./pages/faq.html" class="hover:text-cyan-300 transition-colors">FAQ</a>
+      <a href="./pages/privacy.html" class="hover:text-cyan-300 transition-colors">Privacidad</a>
+    </nav>
+  </div>
+</header>
 
     <main class="site-main">
       <section class="hero">
@@ -39,32 +40,29 @@
         </div>
       </section>
 
-      <section class="container section">
-        <h2>Objetivos de esta ejercitacion</h2>
-        <p class="section-intro">
-          Cada tarjeta esta pensada para que practiques un conjunto de utilidades y aprendas a combinarlas.
-        </p>
-        <div id="servicios-grid" class="cards-grid">
-          <article class="card">
-            <h3>Utilidades de layout</h3>
-            <p>
-              Aplicar contenedores, columnas, gap, alineaciones y distribucion responsive.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Tipografia y color</h3>
-            <p>
-              Definir jerarquia visual con tamaños, pesos, tracking, contraste y fondos.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Estados e interacciones</h3>
-            <p>
-              Mejorar experiencia con hover, focus, transiciones y microinteracciones.
-            </p>
-          </article>
-        </div>
-      </section>
+      <section class="mx-auto max-w-[1100px] w-[92%] py-10">
+  <h2 class="text-2xl font-bold">Objetivos de esta ejercitacion</h2>
+  <p class="text-slate-600 mt-2">Cada tarjeta esta pensada para que practiques un conjunto de utilidades.</p>
+  
+  <div id="servicios-grid" class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    
+    <article class="bg-white border border-slate-300 rounded-xl p-5 shadow-sm transition-transform hover:-translate-y-1">
+      <h3 class="font-bold">Utilidades de layout</h3>
+      <p class="mt-2 text-slate-600">Aplicar contenedores, columnas, gap y distribucion responsive.</p>
+    </article>
+
+    <article class="bg-white border border-slate-300 rounded-xl p-5 shadow-sm transition-transform hover:-translate-y-1">
+      <h3 class="font-bold">Tipografia y color</h3>
+      <p class="mt-2 text-slate-600">Definir jerarquia visual con tamaños, pesos y contraste.</p>
+    </article>
+
+    <article class="bg-white border border-slate-300 rounded-xl p-5 shadow-sm transition-transform hover:-translate-y-1">
+      <h3 class="font-bold">Estados e interacciones</h3>
+      <p class="mt-2 text-slate-600">Mejorar experiencia con hover, focus y transiciones.</p>
+    </article>
+
+  </div>
+</section>
 
       <section class="container section section-last">
         <div class="highlight-box">
